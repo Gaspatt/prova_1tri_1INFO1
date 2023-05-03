@@ -8,11 +8,15 @@
     */
 
     //ENTRADA
-
+    horas = Number(prompt('Quantas horas você trabalha?'))
+    recebeh = Number(prompt('Quanto você recebe por hora trabalhada(dia de semana)?'))
 
     //PROCESSAMENTO
-
+    ganha = recebeh * horas
+    fsemana = ganha / 100 * 75
+    total = fsemana + ganha
 
     //SAÍDA
-
+    document.write(`Você receberá R$${ganha.toFixed(2).replace(".", ",")} em dias normais(dia de semana).`)
+    document.write(` E você receberá R$${total.toFixed(2).replace(".", ",")} nos finais de semana.`)
 </script>

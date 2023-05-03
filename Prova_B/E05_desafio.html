@@ -8,11 +8,16 @@
     */
 
     //ENTRADA
-
+    km = Number(prompt('Quantos km a motocicleta consegue percorrer com cada litro?'))
+    quilometragem = Number(prompt('Qual a quilometragem que já percorreu?'))
+    custol = Number(prompt("Informe o valor do litro de gasolina:"))
 
     //PROCESSAMENTO
-
-
+    revisao = quilometragem / 2000
+    custorevisao = revisao * 200
+    litros = quilometragem / km
+    litrosvalor = litros * custol
+    total = custorevisao + litrosvalor
     //SAÍDA
-
+    document.write(`A quantidade total de litros a serem gastos é ${litros.toFixed(2).replace(".", ",")}. O Custo pela gasolina é de R$${litrosvalor.toFixed(2).replace(".", ",")} e o total pela revisão foi de R${custorevisao.toFixed(2).replace(".", ",")}. O total gasto na viagem foi R$${total.toFixed(2).replace(".", ",")}. `)
 </script>

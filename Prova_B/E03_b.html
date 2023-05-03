@@ -7,11 +7,15 @@
     */
 
     //ENTRADA
-
+    nota1 = Number(prompt('Informe a primeira nota:'))
+    nota2 = Number(prompt('Informe a segunda nota:'))
+    nota3 = Number(prompt('Informe a terceira nota:'))
 
     //PROCESSAMENTO
-
-
+    atividade1 = (nota1 / 10 * 5)
+    atividade2 = (nota2 / 10 * 4)
+    atividade3 = (nota3 / 10 * 1)
+    media = (atividade1 + atividade2 + atividade3)
     //SAÍDA
-
+    document.write(`Na atividade um voce ficou com ${atividade1.toFixed(1).replace(".", ",")}. Na segunda com ${atividade2.toFixed(1).replace(".", ",")}. E na terceira com ${atividade3.toFixed(1).replace(".", ",")}. Sua media foi de ${media.toFixed(1).replace(".", ",")}`)
 </script>

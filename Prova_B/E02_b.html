@@ -8,11 +8,16 @@
     */
 
     //ENTRADA
-
+    distancia = Number(prompt('Informe a distância total que deseja percorrer:'))
 
     //PROCESSAMENTO
-
-
+    litros = distancia / 10.5
+    custol = litros * 5.39
+    pedagio = distancia / 50 * 4.90
+    total = custol + pedagio
     //SAÍDA
-
+    document.write(`Serão necessários ${litros.toFixed(2).replace(".", ",")} litros.
+    O custo da gasolina será de R$${custol.toFixed(2).replace(".", ",")}.
+    O gasto do pedágio será de R$${pedagio.toFixed(2).replace(".", ",")}.
+    E o total gasto com a viagem foi de R$${total.toFixed(2).replace(".", ",")}.`)
 </script>
